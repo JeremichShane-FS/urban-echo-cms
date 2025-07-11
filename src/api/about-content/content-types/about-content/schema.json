@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_contents",
+  "info": {
+    "singularName": "about-content",
+    "pluralName": "about-contents",
+    "displayName": "About Content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "About Urban Echo",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Fashion with Purpose"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "mission": {
+      "type": "richtext"
+    },
+    "vision": {
+      "type": "richtext"
+    },
+    "values": {
+      "type": "json"
+    },
+    "teamImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isActive": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_configs",
+  "info": {
+    "singularName": "page-config",
+    "pluralName": "page-configs",
+    "displayName": "Page Config"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "string"
+    },
+    "showFeaturedProducts": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "showNewArrivals": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "showNewsletter": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "showAboutSection": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "customSections": {
+      "type": "json"
+    }
+  }
+}
